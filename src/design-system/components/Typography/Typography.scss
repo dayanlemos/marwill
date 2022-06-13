@@ -1,0 +1,21 @@
+@font-face {
+  font-family: MarwillTypography;
+  src: url("../../assets/fonts/Poppins-Regular.ttf");
+  font-weight: 0 599;
+}
+
+@font-face {
+  font-family: MarwillTypography;
+  src: url("../../assets/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600 699;
+}
+
+@font-face {
+  font-family: MarwillTypography;
+  src: url("../../assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700 1000;
+}
+
+.marwill-typrography {
+  font-family: MarwillTypography, sans-serif;
+}

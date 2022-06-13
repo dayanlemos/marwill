@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'MarwillLogo';
+  src: url("../../../../assets/fonts/IBMPlexSerif-Regular.ttf");
+}
+.logo-container {
+  cursor: pointer;
+  font-family: MarwillLogo, Serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  color: #FFFFFF;
+  display: flex;
+}
+
+.logo-dot {
+  background: #FFD900;
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  margin-left: 5px;
+  margin-top: 2px;
+}

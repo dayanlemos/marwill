@@ -1,0 +1,45 @@
+    import './Carousel.css'
+import Typography from "../Typography";
+import {useEffect, useState} from "react";
+    import Button from "../Button";
+
+const Carousel = ({ items, onCallAction }) => {
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    useEffect(() => {
+        setSelectedItem(items[0]);
+    }, [items]);
+
+    return items.length > 0 && selectedItem ? <div className='carousel-container' style={{ backgroundImage: selectedItem?.bg }}>
+        <div className='carousel-container-overlay'></div>
+        <div className='carousel-content'>
+            <div style={{ display: 'flex', height: "auto", minHeight: 730, left: 160, margin: 0, zIndex: 1 }}>
+                <div className='col col-left'>
+                    {items.map(item => <div key={item.id} className={`carousel-item ${selectedItem.id === item.id ? 'carousel-item-selected' : ''}`} style={{ backgroundImage: `url(${item.thumbnail.path}.${item.thumbnail.extension})` }} onClick={() => setSelectedItem(item)}></div>)}
+                </div>
+
+                <div className='col col-right'>
+                    <h1>
+                        <Typography className='item-title'>
+                            {selectedItem?.name?.toUpperCase()}
+                        </Typography>
+                    </h1>
+
+                    <p style={{maxWidth: 600}}>
+                        <Typography className='item-description'>
+                            {selectedItem?.description}
+                        </Typography>
+                    </p>
+
+                    <Button type='primary' onClick={() => onCallAction(selectedItem)}>Conheça</Button>
+
+                </div>
+            </div>
+            <div className='flex'>
+                {items.map((item) => <div key={item.id} className={`carousel-bar ${item.id === selectedItem.id && 'selected'}`} ></div>)}
+            </div>
+        </div>
+    </div> : null
+};
+
+export default Carousel;

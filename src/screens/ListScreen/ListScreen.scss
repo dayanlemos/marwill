@@ -1,0 +1,20 @@
+.list-screen-container {
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+
+.input-search {
+  color: #FFFFFF;
+  background: transparent;
+  border: 1px solid #ababab;
+  height: 32px;
+  border-radius: 4px;
+  width: 287px;
+  padding-left: 10px;
+  margin-top: 30px;
+  margin-right: 50px;
+}
