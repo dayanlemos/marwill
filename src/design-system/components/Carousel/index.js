@@ -2,6 +2,8 @@ import './Carousel.scss'
 import Typography from "../Typography";
 import {useEffect, useState} from "react";
 import Button from "../Button";
+import PropTypes from "prop-types";
+import Card from "../Card";
 
 const Carousel = ({ items, onCallAction }) => {
     const [selectedItem, setSelectedItem] = useState(null);
@@ -47,5 +49,17 @@ const Carousel = ({ items, onCallAction }) => {
             </div>
         </div> : null
 };
+
+Carousel.propTypes = {
+    /**
+     * Array de objetos contendo as informações do banner
+     */
+    items: PropTypes.arrayOf(PropTypes.object),
+
+    /**
+     * Função a ser executada ao clicar no botão de ação do banner
+     */
+    onCallAction: PropTypes.func
+}
 
 export default Carousel;

@@ -1,6 +1,7 @@
 import {useState} from "react";
 import Typography from "../Typography";
 import './Card.scss';
+import PropTypes from "prop-types";
 
 const CARD_TITLE_HEIGHT = 40;
 
@@ -33,6 +34,25 @@ const Card = ({ item, width, height, onClick, ...rest }) => {
         </div>
     );
 };
+
+Card.propTypes = {
+    /**
+     * Objeto contendo as informações do card
+     */
+    item: PropTypes.object,
+    /**
+     * Largura em px
+     */
+    width: PropTypes.number,
+    /**
+     * Altura em px
+     */
+    height: PropTypes.number,
+    /**
+     * Função a ser executada ao clicar no card
+     */
+    onClick: PropTypes.func
+}
 
 Card.defaultProps = {
     width: 200,
