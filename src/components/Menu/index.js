@@ -34,10 +34,8 @@ const Menu = () => {
 
                 <div className='menu-footer'>
                     <div role='button' className='menu-button-see-more' onClick={() => history.push('/list')}>
-                        <div style={{ cursor: 'pointer' }}>
-                            <img src='assets/images/dots.png' width='10px' />
-                            <Typography style={{ marginLeft: 10 }}>Ver todos</Typography>
-                        </div>
+                        <div className='dots'></div>
+                        <Typography style={{ marginLeft: 10 }}>Ver todos</Typography>
                     </div>
                 </div>
             </div>

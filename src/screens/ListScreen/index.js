@@ -49,7 +49,11 @@ const ListScreen = () => {
                 <div className='load-more-button' onClick={handleLoadMore}>
                     <div style={{ textAlign: 'center' }}>
                         Marwill <br/>
-                        <Typography style={{ fontSize: 16, fontWeight: 600 }}>Ver mais</Typography>
+
+                        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                            <div className='dots'></div>
+                            <Typography style={{ fontSize: 16, fontWeight: 600 }}>Ver mais</Typography>
+                        </div>
                     </div>
                 </div>
             </div>

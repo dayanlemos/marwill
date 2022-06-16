@@ -35,6 +35,15 @@
       font-weight: 700;
       font-size: 30px;
       line-height: 39px;
+
+      .dots {
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+        background: url("../../../public/assets/images/dots.png") no-repeat;
+        mix-blend-mode: luminosity;
+        background-size: 100%;
+      }
     }
   }
 }
