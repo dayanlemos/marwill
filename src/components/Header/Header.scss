@@ -1,3 +1,5 @@
+@use '../../design-system/colors/colors';
+
 .header-container {
   display: flex;
   justify-content: space-around;
@@ -7,18 +9,18 @@
   padding: 25px 0;
   z-index: 2;
   border-bottom: 1.8px solid rgb(255, 255, 255, 0.1);
-}
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-}
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
 
-.yellow-dash {
-  width: 80%;
-  height: 1.8px;
-  background: linear-gradient(90deg, #ffd900 45px, transparent 0px);
-  position: absolute;
-  top: 89px;
+  .yellow-dash {
+    width: 80%;
+    height: 1.8px;
+    background: linear-gradient(90deg, colors.$primary-default 45px, transparent 0px);
+    position: absolute;
+    top: 89px;
+  }
 }

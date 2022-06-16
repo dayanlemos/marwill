@@ -1,3 +1,5 @@
+@use "../../design-system/colors/colors";
+
 .menu-container {
   position: absolute;
   display: flex;
@@ -5,21 +7,25 @@
   justify-content: space-between;
   background: linear-gradient(#313036, #000);
   backdrop-filter: blur(12px);
-  /* Note: backdrop-filter has minimal browser support */
-
   width: 100%;
   left: 0;
   top: 0;
   padding-top: 140px;
   z-index: 2;
-}
 
-.menu-content {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-  margin: auto;
-  padding-bottom: 100px;
+  .menu-content {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 100px;
+
+    .menu-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
 }
 
 .menu-footer {
@@ -27,34 +33,12 @@
   justify-content: center;
   padding: 8px 0;
   height: 70px;
-
-  background: #15171B;
+  background: colors.$neutral-300;
   opacity: 0.7;
-}
 
-.menu-button-see-more {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.menu-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.load-more-button {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 300px;
-  height: 412px;
-  border: 1.08214px solid #212428;
-  border-radius: 2.88571px;
-  font-family: MarwillLogo, Serif;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 39px;
+  .menu-button-see-more {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }

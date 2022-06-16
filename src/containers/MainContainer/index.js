@@ -3,6 +3,8 @@ import {Prompt} from "react-router-dom";
 import Header from "../../components/Header";
 import AppRoutes from "../../routes/AppRoutes";
 import Menu from "../../components/Menu";
+import {CSSTransition} from "react-transition-group";
+import '../../design-system/assets/css/transitions.scss';
 
 const MainContainer = () => {
     const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -13,7 +15,7 @@ const MainContainer = () => {
         <>
             <Prompt message={handleRouteChange} />
 
-            {isMenuOpened && <Menu />}
+            <CSSTransition in={isMenuOpened} timeout={400} classNames='default-transition' unmountOnExit><Menu /></CSSTransition>
             <Header onClickMenu={handleClickMenu} isMenuOpened={isMenuOpened} />
             <AppRoutes />
 

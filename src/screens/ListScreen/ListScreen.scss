@@ -4,17 +4,38 @@
   height: 100%;
   gap: 40px;
   margin-top: 80px;
+
+  .input-search {
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #ababab;
+    height: 32px;
+    border-radius: 4px;
+    width: 287px;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-right: 50px;
+  }
+
+  .menu-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    .load-more-button {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 300px;
+      height: 412px;
+      border: 1.08214px solid #212428;
+      border-radius: 2.88571px;
+      font-family: MarwillLogo, Serif;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 39px;
+    }
+  }
 }
 
-
-.input-search {
-  color: #FFFFFF;
-  background: transparent;
-  border: 1px solid #ababab;
-  height: 32px;
-  border-radius: 4px;
-  width: 287px;
-  padding-left: 10px;
-  margin-top: 30px;
-  margin-right: 50px;
-}

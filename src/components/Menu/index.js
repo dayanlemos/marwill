@@ -38,7 +38,6 @@ const Menu = () => {
                             <img src='assets/images/dots.png' width='10px' />
                             <Typography style={{ marginLeft: 10 }}>Ver todos</Typography>
                         </div>
-
                     </div>
                 </div>
             </div>

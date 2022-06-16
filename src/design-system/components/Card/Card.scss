@@ -3,27 +3,26 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-}
 
-.card-img-container {
-  overflow: hidden;
-  background: url("https://via.placeholder.com/200x276");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+  .card-img-container {
+    overflow: hidden;
 
-.card-img-overlay {
-  background: linear-gradient(182.71deg, #020203 2.26%, rgba(2, 2, 3, 0) 73.74%);
-  opacity: 0.8;
-  position: relative;
-  transform: rotate(-180deg);
-}
+    .card-img-content {
+      background: url("https://via.placeholder.com/200x276") no-repeat;
+      background-size: cover;
+      transition: transform .4s;
+    }
 
-.card-img {
-  transition: transform .2s;
-}
+    .card-img-overlay {
+      background: linear-gradient(182.71deg, #020203 2.26%, rgba(2, 2, 3, 0) 73.74%);
+      opacity: 0;
+      position: relative;
+      transition: opacity .4s;
+      transform: rotate(-180deg);
+    }
+    .card-img-overlay:hover {
+      opacity: 0.8;
+    }
 
-.card-img:hover {
-  transform: scale(1.5);
-  //transform: rotate(-180deg);
+  }
 }
