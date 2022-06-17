@@ -1,7 +1,5 @@
 # Wellcome to Marwill App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -15,6 +13,14 @@ Install dependencies.
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+### `yarn test`
+
+Runs unit tests
+
+### `yarn test --coverage`
+
+Runs unit tests and generate coverage info.
+It creates a repo called 'coverage' in the project root.
 
 ### `yarn run build`
 
